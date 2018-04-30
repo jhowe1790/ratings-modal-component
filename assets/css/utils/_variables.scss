@@ -7,13 +7,13 @@ $font-family-roboto: 'Roboto', Arial, Helvetica, sans-serif;
 
 $font-family-base: $font-family-roboto;
 
-$font-size-base:          18px;
+$font-size-base:          20px;
 
 $font-size-xx-large:      62px;
 $font-size-x-large:       58px;
 $font-size-large:         42px;
 $font-size-medium:        30px;
-$font-size-small:         24px;
+$font-size-small:         22px;
 $font-size-x-small:       16px;
 $font-size-xx-small:      14px;
 
@@ -29,13 +29,11 @@ $line-height-base:        28px;
 // Breakpoints
 $breakpoint-small: 460px;
 $breakpoint-medium: 930px;
-$breakpoint-large: 1430px;
+$breakpoint-large: 1240px;
 
 // Paths
-$image-path: '/wp-content/themes/shaw-corp-theme/assets/_img';
-$font-path: '/wp-content/themes/shaw-corp-theme/assets/_fonts';
-// $image-path: '/wp-content/themes/themeName/assets/_img';
-// $font-path: '/wp-content/themes/themeName/assets/_fonts';
+$image-path: '../_img';
+$font-path: '../_fonts';
 
 // Spacing
 $base-spacing: 10px;
@@ -47,8 +45,11 @@ $button-inputs: '.button, button, input[type=submit]';
 $z-index-top: 10;
 $z-index-bottom: 0;
 
+// Border Radius
+$base-border-radius: 8px;
+
 // Headings
 $headings: h1, h2, h3, h4, h5, h6;
 
 // Site Container
-$site-container: 1390px;
+$site-container: 1240px;
