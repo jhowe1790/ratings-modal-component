@@ -9,9 +9,5 @@
   "globals": {
     "jQuery": false,
     "$": false,
-    "waypoint": false,
-    "Waypoint": false,
-    "moment": false,
-    "gtag": false
   }
 }
