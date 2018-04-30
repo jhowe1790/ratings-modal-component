@@ -22,13 +22,6 @@ BASEPATH_DEST_JS=./public/assets/_js
 BASEPATH_DEST_FONTS=./public/assets/_fonts
 SVG_DEFS_FILE=./public/assets/_img/svg/svg.php
 
-# Basepath Wordpress Destinations
-# BASEPATH_WP_DEST_CSS=./public/wp-content/themes/themeName/assets/_css
-# BASEPATH_WP_DEST_IMG=./public/wp-content/themes/themeName/assets/_img
-# BASEPATH_WP_DEST_JS=./public/wp-content/themes/themeName/assets/_js
-# BASEPATH_WP_DEST_FONTS=./public/wp-content/themes/themeName/assets/_fonts
-# SVG_WP_DEFS_FILE=./public/wp-content/themes/themeName/assets/_img/svg/svg.php
-
 # Vendor JS Files
 VENDOR_NORMALIZE_FOLDER=./node_modules/normalize.css
 VENDOR_JQUERY=./node_modules/jquery/dist/jquery.js
@@ -37,13 +30,9 @@ build: clean css fonts images js_lint js_vendor js
 build_prod: clean css fonts images js_vendor js
 
 install:
-	# For Wordpress builds
-	# cp wp-config-local.php wp-config.php
 	npm install
 
 reset:
-	# For Wordpress builds
-	# rm -Rf wp-config.php
 	rm -Rf node_modules
 
 clean:
@@ -52,11 +41,6 @@ clean:
 	@rm -rf $(BASEPATH_DEST_IMG)
 	@rm -rf $(BASEPATH_DEST_JS)
 	@rm -rf $(BASEPATH_DEST_FONTS)
-	# For Wordpress builds
-	# @rm -rf $(BASEPATH_WP_DEST_CSS)
-	# @rm -rf $(BASEPATH_WP_DEST_IMG)
-	# @rm -rf $(BASEPATH_WP_DEST_JS)
-	# @rm -rf $(BASEPATH_WP_DEST_FONTS)
 	@echo 'Cleaned!'
 
 css:
