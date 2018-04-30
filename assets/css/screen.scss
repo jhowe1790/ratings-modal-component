@@ -14,8 +14,13 @@
 @import 'base/font-face';
 @import 'base/typography';
 @import 'base/base';
+@import 'base/buttons';
+@import 'base/icons';
+@import 'base/form';
 
 // Import all element files
-@import 'elements/buttons';
+@import 'elements/modal';
+@import 'elements/star-ratings';
 
-// Import all Vendor files
+// Import all page sfiles
+@import 'pages/review';
