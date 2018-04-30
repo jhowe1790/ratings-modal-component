@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Ratings modal component</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/_css/screen.css">
+
+    </head>
+
+    <body class="page-review">
+
+    	<div class="site-container">
+
+    		<button id="js-modal-trigger" class="button button-review button--primary">Leave a review</button>
+
+			<div class="modal">
+
+				<div class="modal__wrap">
+
+					<span id="js-modal-close" class="button button-close"></span>
+
+					<div class="modal__inner">
+
+						<form class="form" action="process.php" method="POST">
+
+							<h2 class="form__heading">How did we do?</h2>
+
+							<p class="form__intro">Please let us know how your food delivery was. It will really help us to keep improving our service!</p>
+
+							<div id="food-rating" class="form-field">
+
+								<h3 class="form-field__heading">How would you rate your food?</h3>
+
+								<div class="star-rating">
+									<input type="radio" id="food-star5" name="foodRating" value="5" />
+									<label for="food-star5" title="Outstanding">5 stars</label>
+
+									<input type="radio" id="food-star4" name="foodRating" value="4" />
+									<label for="food-star4" title="Very Good">4 stars</label>
+
+									<input type="radio" id="food-star3" name="foodRating" value="3" />
+									<label for="food-star3" title="Good">3 stars</label>
+
+									<input type="radio" id="food-star2" name="foodRating" value="2" />
+									<label for="food-star2" title="Poor">2 stars</label>
+
+									<input type="radio" id="food-star1" name="foodRating" value="1" />
+									<label for="food-star1" title="Very Poor">1 star</label>
+								</div>
+
+							</div>
+
+							<div id="delivery-rating" class="form-field">
+
+								<h3 class="form-field__heading">How would you rate your delivery driver?</h3>
+
+								<div class="star-rating">
+									<input type="radio" id="delivery-star5" name="deliveryRating" value="5" />
+									<label for="delivery-star5" title="Outstanding">5 stars</label>
+
+									<input type="radio" id="delivery-star4" name="deliveryRating" value="4" />
+									<label for="delivery-star4" title="Very Good">4 stars</label>
+
+									<input type="radio" id="delivery-star3" name="deliveryRating" value="3" />
+									<label for="delivery-star3" title="Good">3 stars</label>
+
+									<input type="radio" id="delivery-star2" name="deliveryRating" value="2" />
+									<label for="delivery-star2" title="Poor">2 stars</label>
+
+									<input type="radio" id="delivery-star1" name="deliveryRating" value="1" />
+									<label for="delivery-star1" title="Very Poor">1 star</label>
+								</div>
+
+							</div>
+
+							<div id="overall-rating" class="form-field">
+
+								<h3 class="form-field__heading">How would you rate your overall experience?</h3>
+
+								<div class="star-rating">
+									<input type="radio" id="overall-star5" name="overallRating" value="5" />
+									<label for="overall-star5" title="Outstanding">5 stars</label>
+
+									<input type="radio" id="overall-star4" name="overallRating" value="4" />
+									<label for="overall-star4" title="Very Good">4 stars</label>
+
+									<input type="radio" id="overall-star3" name="overallRating" value="3" />
+									<label for="overall-star3" title="Good">3 stars</label>
+
+									<input type="radio" id="overall-star2" name="overallRating" value="2" />
+									<label for="overall-star2" title="Poor">2 stars</label>
+
+									<input type="radio" id="overall-star1" name="overallRating" value="1" />
+									<label for="overall-star1" title="Very Poor">1 star</label>
+								</div>
+
+							</div>
+
+							<button class="button button--primary">Submit Feedback</button>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__overlay"></div>
+
+        <script src="assets/_js/vendor.js"></script>
+        <script src="assets/_js/app.js"></script>
+
+    </body>
+</html>
