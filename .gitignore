@@ -21,9 +21,9 @@ scss-lint-report.xml
 /app/config/local
 
 # Hide generated files
-/public/_*
-/public/*.css
-!/public/_img # This is not ignored.
+/public/assets/_*
+/public/assets/*.css
+!/public/assets/_img # This is not ignored.
 /public/var/*
 /public/packages/*
 
