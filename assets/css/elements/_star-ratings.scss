@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// Elements: Star Ratings
+// -----------------------------------------------------------------------------
+
+$star-dimension: 37px;
+
+.star-rating {
+	display: inline-block;
+
+	&:not(:checked) {
+
+		&> input {
+			position: absolute;
+			top: -9999px;
+			visibility: hidden;
+		}
+
+		&> label {
+			color: $tulip-tree;
+			float: right;
+			width: $star-dimension;
+			height: $star-dimension;
+			overflow: hidden;
+			white-space: nowrap;
+			cursor: pointer;
+			margin: 0 ($base-spacing / 2);
+
+			&::before {
+				@include background('/svg/star.svg', $size: $star-dimension $star-dimension);
+
+				content: '';
+				width: $star-dimension;
+				height: $star-dimension;
+				display: block;
+			}
+
+			&:hover,
+			&:hover ~ label {
+
+				&::before {
+					@include background('/svg/star-full.svg', $size: $star-dimension $star-dimension);
+				}
+			}
+		}
+	}
+
+	&> input:checked {
+
+		& ~ label {
+
+			&::before {
+				@include background('/svg/star-full.svg', $size: $star-dimension $star-dimension);
+			}
+		}
+	}
+}
+

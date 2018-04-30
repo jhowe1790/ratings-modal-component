@@ -3,8 +3,11 @@
 // -----------------------------------------------------------------------------
 
 // Roboto Font Path
-// $roboto-font-path: '#{$font-path}/roboto/';
+$roboto-font-path: '#{$font-path}/roboto/';
 
-// Roboto Black Italic
-// @include font-face('Roboto', 'Roboto-BlackItalic', $roboto-font-path, 900, italic);
+// Roboto Regular
+@include font-face('Roboto', 'Roboto-Regular', $roboto-font-path);
+
+// Roboto Bold
+@include font-face('Roboto', 'Roboto-Bold', $roboto-font-path, bold);
 

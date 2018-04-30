@@ -2,20 +2,14 @@
 // Base: Typography
 // -----------------------------------------------------------------------------
 
-::selection {
-	background: $brand-color;
-	color: $white;
-}
-
-::-moz-selection {
-	background: $brand-color;
-	color: $white;
-}
-
 html {
 	font-family: $font-family-base;
-	font-size: $font-size-base;
+	font-size: $font-size-x-small;
 	color: $base-font-color;
+
+	@include breakpoint(small) {
+		font-size: $font-size-base;
+	}
 }
 
 strong {
@@ -34,6 +28,7 @@ p {
 #{$headings} {
 	font-weight: bold;
 	margin-top: 0;
+	margin-bottom: ($base-spacing * 2.5);
 }
 
 h1 {

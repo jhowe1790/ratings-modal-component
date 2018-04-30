@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// Base: Form
+// -----------------------------------------------------------------------------
+
+.form {
+
+	&__heading {
+
+		@include breakpoint(small-max) {
+			font-size: $font-size-medium;
+		}
+	}
+
+	&__intro {
+		margin-bottom: ($base-spacing * 4.5);
+	}
+
+	&__notification {
+		margin-top: ($base-spacing * 2);
+		max-width: 460px;
+		margin: 0 auto;
+	}
+
+	&-field {
+		margin-bottom: ($base-spacing * 5);
+
+		&__heading {
+			font-size: $font-size-small;
+			margin-bottom: ($base-spacing * 2);
+		}
+
+		&__hint {
+			font-size: $font-size-xx-small;
+			font-weight: bold;
+		}
+
+		&--error {
+
+			.form-field__hint {
+				color: $torch-red;
+			}
+		}
+	}
+}

@@ -2,8 +2,15 @@
 // Base
 // -----------------------------------------------------------------------------
 
+html,
+body {
+	background-color: $white;
+	height: 100%;
+}
+
 .site-container {
 	max-width: $site-container;
 	margin: 0 auto;
 	padding: 0 ($base-spacing * 1.5);
+	height: 100%;
 }

@@ -1,0 +1,68 @@
+// -----------------------------------------------------------------------------
+// Base: Buttons
+// -----------------------------------------------------------------------------
+
+#{$button-inputs} {
+	appearance: none;
+    outline: none;
+    color: $black;
+    font-size: $font-size-xx-small;
+    display: inline-block;
+    border: none;
+
+    &:hover {
+    	cursor: pointer;
+    }
+}
+
+.button {
+
+    &--primary {
+    	background-color: $blue;
+    	color: $white;
+    	border-radius: $base-border-radius;
+    	padding: ($base-spacing * 2);
+    	width: 100%;
+    	max-width: 280px;
+    	font-size: $font-size-small;
+		font-weight: bold;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+
+    &--disabled {
+    	opacity: 0.3;
+    }
+
+    $button-close-dimension: 50px;
+    $button-close-icon-dimension: 25px;
+    $button-close-dimension-mobile: 40px;
+    $button-close-icon-dimension-mobile: 20px;
+
+    &-close {
+    	position: relative;
+    	background-color: $black;
+    	border-radius: 50%;
+    	height: $button-close-dimension-mobile;
+    	width: $button-close-dimension-mobile;
+
+    	@include breakpoint(small) {
+	    	height: $button-close-dimension;
+	    	width: $button-close-dimension;
+		}
+
+    	&::before {
+    		@include background('/svg/close.svg', $size: $button-close-icon-dimension-mobile $button-close-icon-dimension-mobile);
+    		@include center(xy);
+
+    		content: '';
+			height: $button-close-icon-dimension-mobile;
+			width: $button-close-icon-dimension-mobile;
+
+	    	@include breakpoint(small) {
+    			@include background('/svg/close.svg', $size: $button-close-icon-dimension $button-close-icon-dimension);
+				height: $button-close-icon-dimension;
+				width: $button-close-icon-dimension;
+			}
+    	}
+    }
+}
