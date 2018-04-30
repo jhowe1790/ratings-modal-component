@@ -1,0 +1,44 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Composer
+composer.phar
+composer.lock
+/vendor
+
+# Sass
+.sass-cache
+node_modules
+scss-lint-report.xml
+
+# Node
+/node_modules
+/npm-debug.log
+
+# Laravel
+/bootstrap/compiled.php
+/app/config/local
+
+# Hide generated files
+/public/_*
+/public/*.css
+!/public/_img # This is not ignored.
+/public/var/*
+/public/packages/*
+
+# Testing
+/report
+
+# WordPress config files
+wp-config.php
+
+# WordPress content
+/public/wp-content/uploads/
+/public/wp-content/themes/shaw-corp-theme/assets/_*
+
+# Bower
+assets/bower-packages/*
+
+# Capistrano
+/log

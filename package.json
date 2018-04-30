@@ -1,0 +1,33 @@
+{
+  "name": "skeleton-pack",
+  "version": "1.0.0",
+  "description": "Skeleton Pack",
+  "author": "James Howe",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "assetinjector": "^1.0.0",
+    "autoprefixer": "^6.3.1",
+    "cssnano": "3.10.0",
+    "es6-promise": "^4.1.0",
+    "glob": "^7.1.1",
+    "hashbuster": "^1.0.1",
+    "jquery": "^3.1.1",
+    "minimist": "^1.2.0",
+    "node-sass": "^3.13.0",
+    "normalize.css": "^7.0.0",
+    "postcss": "^5.2.5",
+    "postcss-flexbugs-fixes": "^2.0.0",
+    "postcss-pxtorem": "^3.3.1",
+    "svg-sprite": "1.2.19",
+    "svgo": "0.6.6",
+    "uglify-js": "^2.7.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-plugin-import": "^2.2.0",
+    "gaze": "^1.1.2"
+  }
+}

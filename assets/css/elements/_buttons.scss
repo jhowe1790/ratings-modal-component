@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// Elements: Buttons
+// -----------------------------------------------------------------------------
+
+#{$button-inputs} {
+	appearance: none;
+    outline: none;
+    padding: ($base-spacing * 1.5) ($base-spacing * 2.5);
+    color: $black;
+    font-size: $font-size-xx-small;
+    display: inline-block;
+}

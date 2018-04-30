@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// Mixin: Background
+// -----------------------------------------------------------------------------
+
+@mixin background ($img: null, $img-path: $image-path, $repeat: no-repeat, $x: 0px, $y: 0px, $size: cover) {
+
+    @if variable-exists(img) and $img != null {
+    	background-image: url(#{$img-path}#{$img});
+	}
+
+    background-repeat: #{$repeat};
+    background-position: #{$x} #{$y};
+    background-size: #{$size};
+}

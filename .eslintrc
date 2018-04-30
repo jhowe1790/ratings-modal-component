@@ -1,0 +1,17 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "no-console": 0
+  },
+  "globals": {
+    "jQuery": false,
+    "$": false,
+    "waypoint": false,
+    "Waypoint": false,
+    "moment": false,
+    "gtag": false
+  }
+}
