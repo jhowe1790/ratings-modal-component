@@ -5,6 +5,12 @@
 $black:        #000;
 $white:        #fff;
 
-$brand-color: $black;
-$base-font-color: $black;
-$link-color: $black;
+$alto: 			#d8d8d8; //Light gray.
+$mine-shaft: 	#232323; //Very dark gray (mostly black).
+$tulip-tree: 	#ecb830; //Bright orange.
+$cod-gray: 		#1c1c1c; //Very dark gray (mostly black).
+$blue: 			#0021ff; //Pure (or mostly pure) blue.
+$torch-red:     #ff0021; //Pure (or mostly pure) red.
+
+$base-font-color: $mine-shaft;
+$link-color: $blue;
